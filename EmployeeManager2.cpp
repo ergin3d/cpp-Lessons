@@ -12,35 +12,34 @@ class Employee
 		double salary;
 
 	public:
-
-        // Constructor
-        Employee(string initName, int initId, double initSalary) : name(initName), id(initId), salary(initSalary) {}
-
-        // Setters
-        void setName(string newName) {
-            name = newName;
-        }
-
-        void setId(int newId) {
-            id = newId;
-        }
-
-        void setSalary(double newSalary) {
-            salary = newSalary;
-        }
-
-        // Getters
-        string getName() const {
-            return name;
-        }
-
-        int getId() const {
-            return id;
-        }
-
-        double getSalary() const {
-            return salary;
-        }
+	        // Constructor
+	        Employee(string initName, int initId, double initSalary) : name(initName), id(initId), salary(initSalary) {}
+	
+	        // Setters
+	        void setName(string newName) {
+	            name = newName;
+	        }
+	
+	        void setId(int newId) {
+	            id = newId;
+	        }
+	
+	        void setSalary(double newSalary) {
+	            salary = newSalary;
+	        }
+	
+	        // Getters
+	        string getName() const {
+	            return name;
+	        }
+	
+	        int getId() const {
+	            return id;
+	        }
+	
+	        double getSalary() const {
+	            return salary;
+	        }
 
 		//Function to calculate the salary of an employee. This function should be virtual
 		virtual double calculateSalary() const {
@@ -78,11 +77,11 @@ class FullTimeEmployee : public Employee
 class PartTimeEmployee : public Employee
 {
     private:
-		double hourlyRate;
-		int hoursWorkedPerWeek;
+	double hourlyRate;
+	int hoursWorkedPerWeek;
 
     public:
-		// Constructor
+	// Constructor
         PartTimeEmployee(std::string initName, int initId, double initHourlyRate, int initHoursWorkedPerWeek)
             : Employee(initName, initId, 0), hourlyRate(initHourlyRate), hoursWorkedPerWeek(initHoursWorkedPerWeek) {}
 		
