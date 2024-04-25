@@ -54,7 +54,7 @@ class FullTimeEmployee : public Employee
 
     public:
         // Constructor
-        FullTimeEmployee(std::string initName, int initId, double initSalary, int initYearsOfExperience)
+        FullTimeEmployee(string initName, int initId, double initSalary, int initYearsOfExperience)
             : Employee(initName, initId, initSalary), yearsOfExperience(initYearsOfExperience) {}
 
         // Setter
@@ -82,7 +82,7 @@ class PartTimeEmployee : public Employee
 
     public:
 	// Constructor
-        PartTimeEmployee(std::string initName, int initId, double initHourlyRate, int initHoursWorkedPerWeek)
+        PartTimeEmployee(string initName, int initId, double initHourlyRate, int initHoursWorkedPerWeek)
             : Employee(initName, initId, 0), hourlyRate(initHourlyRate), hoursWorkedPerWeek(initHoursWorkedPerWeek) {}
 		
         // Setters
